@@ -22,7 +22,7 @@ export class ParentComponent {
         nome: 'Mike',
         cognome: 'Maignan',
         nazionalita: 'Francese',
-        età: '27 anni',
+        eta: '27 anni',
         reti: 0,
         assist: 1
     }]
