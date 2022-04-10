@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: black;
+}
+.pyrs, .pyr{
+    color: white;
+}
+.pick{
+    width: 350px;
+    background-color: rgb(110, 110, 110);
+}
+.foto{
+    width: 100px;
+    height: 100px;
+}
