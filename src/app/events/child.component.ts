@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, Output, EventEmitter } from "@angular/core";
 
 @Component ({
     selector: 'child-component',
@@ -18,10 +18,16 @@ import { Component, Input } from "@angular/core";
         <div>Età: {{card.eta}}</div>
         <div>Reti: {{card.reti}}</div>
         <div>Assist: {{card.assist}}</div>
+        <br>
+        <div><button type="button" (click)="modifica()">Cambia i dati</button></div>
     </div>
     `
 })
 
 export class ChildComponent {
     @Input() card: any
+    @Output() cambio = new EventEmitter()
+    modifica() {
+        this.cambio.emit("Cambia Dati del calciatore")
+    }
 }
