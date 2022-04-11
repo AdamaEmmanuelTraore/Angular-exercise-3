@@ -3,20 +3,25 @@ import { Component, Input } from "@angular/core";
 @Component ({
     selector: 'child-component',
     template: `
-        <div class="pyrs">
-            <div>{{Card.img}}</div>
-            <div>Ruolo: {{Card.ruolo}}</div>
-            <div>Numero di maglia: {{Card.numero_maglia}}</div>
-            <div>Nome: {{Card.nome}}</div>
-            <div>Cognome: {{Card.Cognome}}</div>
-            <div>Nazionalità: {{Card.nazionalitav}}</div>
-            <div>Età: {{Card.eta}}</div>
-            <div>Reti: {{Card.reti}}</div>
-            <div>Assist: {{Card.assist}}</div>
+    <div class="pyrs">
+        <div><img src="{{card.img}}" class="foto"></div>
+        <div [ngSwitch]="card.ruolo">
+            <span *ngSwitchCase="'Portiere'"><h1>Portiere</h1><hr></span>
+            <span *ngSwitchCase="'Difensore'"><h1>Difensore</h1><hr></span>
+            <span *ngSwitchCase="'Centrocampista'"><h1>Centrocampista</h1><hr></span>
+            <span *ngSwitchCase="'Attaccante'"><h1>Attaccante</h1><hr></span>
         </div>
+        <div>Numero di maglia: {{card.numero_maglia}}</div>
+        <div>Nome: {{card.nome}}</div>
+        <div>Cognome: {{card.cognome}}</div>
+        <div>Nazionalità: {{card.nazionalita}}</div>
+        <div>Età: {{card.eta}}</div>
+        <div>Reti: {{card.reti}}</div>
+        <div>Assist: {{card.assist}}</div>
+    </div>
     `
 })
 
 export class ChildComponent {
-    @Input() Card: any
+    @Input() card: any
 }

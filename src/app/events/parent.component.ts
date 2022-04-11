@@ -1,29 +1,25 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { Service } from "./service/service";
 
 @Component ({
     selector: 'parent-component',
     template: `
-        <div>
-            <h1 class="pyr">Giocatori dell'Ac Milan</h1>
+        <div class="pyr">
+            <h1>Giocatori dell'Ac Milan</h1>
             <hr>
-            <div class="pick">
-                <child-component [Card]="card"></child-component>
+            <div  *ngFor="let card of player" class="pick">
+                <child-component [card]="card"></child-component>
             </div>
         </div>
     `
 })
 
-export class ParentComponent {
-    card = [{
-        id: 1,
-        img: '/assets/images/Mike_Maignan.jpg',
-        ruolo: 'Portiere',
-        numero_maglia: 16,
-        nome: 'Mike',
-        cognome: 'Maignan',
-        nazionalita: 'Francese',
-        eta: '27 anni',
-        reti: 0,
-        assist: 1
-    }]
+export class ParentComponent implements OnInit {
+    player: any = []
+    constructor(private service: Service) {
+
+    }
+    ngOnInit() {
+        this.player = this.service.getService()
+    }
 }
