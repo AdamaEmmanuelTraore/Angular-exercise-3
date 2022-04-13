@@ -19,7 +19,7 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
         <div>Reti: {{card.reti}}</div>
         <div>Assist: {{card.assist}}</div>
         <br>
-        <div><button type="button" (click)="modifica()">Cambia i dati</button></div>
+        <div><button type="button" (click)="modifica()">Visualizza i dati</button></div>
     </div>
     `
 })
