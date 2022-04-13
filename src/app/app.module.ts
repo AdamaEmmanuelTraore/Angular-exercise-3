@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { ChildComponent } from './events/child.component';
 import { ParentComponent } from './events/parent.component';
 import { Service } from './events/service/service';
+import { NavBar } from './nav/nav-bar';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    NavBar
   ],
   imports: [
     BrowserModule

@@ -29,3 +29,22 @@ button{
     background-color: red;
     cursor: pointer;
 }
+.navbar{
+    background-color: red;
+}
+a{
+    background-color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.cBtn{
+    width: 100px;
+    padding: 5px;
+    background-color: gray;
+    float: right;
+    margin-left: 10px;
+}
+.info{
+    float: right;
+    margin-right: 20px;
+}
