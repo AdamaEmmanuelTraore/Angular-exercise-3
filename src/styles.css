@@ -20,7 +20,7 @@ body{
     width: 60%;
     padding: 10px;
 }
-button{
+.info{
     display: block;
     padding: 15px;
     margin-left: auto;
@@ -78,4 +78,12 @@ ul {
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  h1, h3{
+    color: white;
+  }
+  .err{
+    margin-top: 150px;
+    font-size: 170px;
+    text-align: center;
   }

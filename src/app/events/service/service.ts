@@ -6,6 +6,10 @@ export class ServiceCard {
     getService() {
         return PLAYERS
     }
+    // SERVIZIO PER VISUALIZZARE TUTTI I GIOCATORI
+    getDirectors() {
+        return DIRIGENZA
+    }
     // SERVIZIO PER VISUALIZZARE UN SINGOLO CALCIATORE
     getElement(id: number) {
         return PLAYERS.find(card => card.id === id)
@@ -282,4 +286,32 @@ const PLAYERS = [
         reti: 0,
         assist: 0
     },
+]
+
+const DIRIGENZA = [
+{   id: 1,
+    img: '/assets/images/maldini.png',
+    ruolo: 'Dirigente sportivo',
+    nome: 'Paolo',
+    cognome: 'Maldini',
+    altezza: '1,86 m',
+    eta: '53 anni',
+    nazionalita: 'Italia'},
+
+{   id: 2,
+    img: '/assets/images/massara.png',
+    ruolo: 'Dirigente sportivo',
+    nome: 'Frederic',
+    cognome: 'Massara',
+    altezza: '1,78 m',
+    eta: '53 anni',
+    nazionalita: 'Italia'},
+
+{   id: 3,
+    img: '/assets/images/gazidis.png',
+    ruolo: 'CEO',
+    nome: 'Ivan',
+    cognome: 'Gazidis',
+    eta: '57 anni',
+    nazionalita: 'Sud-Africa'}
 ]

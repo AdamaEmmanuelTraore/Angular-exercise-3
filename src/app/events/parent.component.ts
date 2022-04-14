@@ -21,6 +21,7 @@ export class ParentComponent implements OnInit {
     ngOnInit() {
         this.player = this.service.getService()
     }
+    // questo mi serve per il collegamento @Output figlio/padre
     dati(x: any) {
         console.log("Cliccato su: ", x)
     }

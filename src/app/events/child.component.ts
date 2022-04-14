@@ -19,7 +19,7 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
         <div>Reti: {{card.reti}}</div>
         <div>Assist: {{card.assist}}</div>
         <br>
-        <div><button type="button" (click)="modifica()">Visualizza i dati</button></div>
+        <div><button [routerLink]="['/home', card.id]" type="button" (click)="Dettagli()" class="info">Scopri di più</button></div>
     </div>
     `
 })
@@ -27,7 +27,7 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
 export class ChildComponent {
     @Input() card: any
     @Output() cambio = new EventEmitter()
-    modifica() {
-        this.cambio.emit("Cambia Dati del calciatore")
+    Dettagli() {
+        this.cambio.emit("Dettagli sul calciatore")
     }
 }

@@ -1,12 +1,12 @@
 <ul>
-    <li><a>Home</a></li>
-    <li><a>Aggiungi calciatore</a></li>
+    <li><a routerLinkActive="active" [routerLink]="'home'">Rosa</a></li>
+    <li><a [routerLink]="'home/crea'">Aggiungi calciatore</a></li>
     <li class="dropdown">
-        <a class="dropbtn">Dropdown</a>
+        <a class="dropbtn">Società</a>
         <div class="dropdown-content">
-            <a>Rosa</a>
+            <a [routerLink]="'home/dirigenza'">Dirigenza</a>
             <a>Staff</a>
-            <a>Dirigenza</a>
+            <a>Trofei</a>
         </div>
     </li>
     <li><a>Contact</a></li>
