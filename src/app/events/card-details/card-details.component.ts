@@ -1,9 +1,11 @@
+import { style } from "@angular/animations";
 import { Component } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { ServiceCard } from "../service/service";
 
 @Component({
-    templateUrl: './card-details.component.html'
+    templateUrl: './card-details.component.html',
+    styleUrls: ['./card-details.component.css']
 })
 
 export class CardDetailsComponent {

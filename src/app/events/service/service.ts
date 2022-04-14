@@ -16,6 +16,7 @@ const PLAYERS = [
     {
         id: 1,
         img: '/assets/images/mike.png',
+        gif: 'assets/images/maignan-maignan-milan.gif',
         ruolo: 'Portiere',
         numero_maglia: 16,
         nome: 'Mike',
@@ -24,7 +25,7 @@ const PLAYERS = [
         eta: '27 anni',
         reti: 0,
         assist: 1,
-        detail: "storia: Inizialmente centrocampista, è stato poi spostato in quello che è il suo attuale ruolo di portiere da Ramon Damiano, che è stato uno dei suoi primi allenatori. Dotato di ottima personalità, atletismo e riflessi, è molto abile in uscita. A questo unisce anche una buona capacità nel parare i rigori. Si distingue anche per le sue capacità nel giocare con i piedi."
+        detail: "Inizialmente centrocampista, è stato poi spostato in quello che è il suo attuale ruolo di portiere da Ramon Damiano, che è stato uno dei suoi primi allenatori. Dotato di ottima personalità, atletismo e riflessi, è molto abile in uscita. A questo unisce anche una buona capacità nel parare i rigori. Si distingue anche per le sue capacità nel giocare con i piedi."
     },
     {
         id: 2,
@@ -42,6 +43,7 @@ const PLAYERS = [
     {
         id: 3,
         img: '/assets/images/calabria.png',
+        gif: 'assets/images/davide-calabria-calabria.gif',
         ruolo: 'Difensore',
         numero_maglia: 2,
         nome: 'Davive',

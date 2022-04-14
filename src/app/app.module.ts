@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { CardDetailsComponent } from './events/card-details/card-details.component';
 import { ChildComponent } from './events/child.component';
 import { ParentComponent } from './events/parent.component';
 import { ServiceCard } from './events/service/service';
@@ -14,7 +15,8 @@ import { appRoute } from './routes';
     AppComponent,
     ParentComponent,
     ChildComponent,
-    NavBar
+    NavBar,
+    CardDetailsComponent
   ],
   imports: [
     BrowserModule,
