@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ChildComponent } from './events/child.component';
 import { ParentComponent } from './events/parent.component';
-import { Service } from './events/service/service';
+import { ServiceCard } from './events/service/service';
 import { NavBar } from './nav/nav-bar';
+import { appRoute } from './routes';
 
 @NgModule({
   declarations: [
@@ -15,9 +17,10 @@ import { NavBar } from './nav/nav-bar';
     NavBar
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoute)
   ],
-  providers: [Service],
+  providers: [ServiceCard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

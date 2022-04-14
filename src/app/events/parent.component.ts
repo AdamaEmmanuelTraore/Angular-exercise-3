@@ -1,8 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { Service } from "./service/service";
+import { ServiceCard } from "./service/service";
 
 @Component ({
-    selector: 'parent-component',
     template: `
         <div class="pyr">
             <h1>Giocatori dell'Ac Milan</h1>
@@ -16,7 +15,7 @@ import { Service } from "./service/service";
 
 export class ParentComponent implements OnInit {
     player: any = []
-    constructor(private service: Service) {
+    constructor(private service: ServiceCard) {
 
     }
     ngOnInit() {

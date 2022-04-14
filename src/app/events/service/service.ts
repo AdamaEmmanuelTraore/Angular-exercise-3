@@ -1,9 +1,14 @@
 import { Injectable } from "@angular/core";
 
 @Injectable()
-export class Service {
+export class ServiceCard {
+    // SERVIZIO PER VISUALIZZARE TUTTI I GIOCATORI
     getService() {
         return PLAYERS
+    }
+    // SERVIZIO PER VISUALIZZARE UN SINGOLO CALCIATORE
+    getElement(id: number) {
+        return PLAYERS.find(card => card.id === id)
     }
 }
 
@@ -18,7 +23,8 @@ const PLAYERS = [
         nazionalita: 'Francia',
         eta: '27 anni',
         reti: 0,
-        assist: 1
+        assist: 1,
+        detail: "storia: Inizialmente centrocampista, è stato poi spostato in quello che è il suo attuale ruolo di portiere da Ramon Damiano, che è stato uno dei suoi primi allenatori. Dotato di ottima personalità, atletismo e riflessi, è molto abile in uscita. A questo unisce anche una buona capacità nel parare i rigori. Si distingue anche per le sue capacità nel giocare con i piedi."
     },
     {
         id: 2,
@@ -30,7 +36,8 @@ const PLAYERS = [
         nazionalita: 'Romania',
         eta: '36 anni',
         reti: 0,
-        assist: 0
+        assist: 0,
+        detail: "Chiamato l'Uomo Ragno in patria, a dispetto del fisico imponente, è abile non solo sui palloni alti, ma anche sui tiri rasoterra. Sicuro nelle uscite, possiede una buona reputazione a livello internazionale ed è uno specialista nel parare i calci di rigore."
     },
     {
         id: 3,
@@ -42,7 +49,8 @@ const PLAYERS = [
         nazionalita: 'Italia',
         eta: '25 anni',
         reti: 2,
-        assist: 3
+        assist: 3,
+        detail: "Nato centrocampista, ricopre a partire dal settore Allievi prevalentemente il ruolo di terzino destro, nonostante sappia destreggiarsi anche sulla fascia sinistra. Occasionalmente è stato utilizzato come mezzala o mediano in situazioni di emergenza. Dotato di velocità e resistenza, si trova a proprio agio anche nel ruolo di esterno di centrocampo. A fronte di una prestanza fisica non eccelsa, si distingue invece per grinta, velocità, e intelligenza tattica motivo per cui è sovente soprannominato dai suoi tifosi con l'appellativo di Frisbee o Boomerang; tale appellativo gli fu attribuito per la prima volta dal telecronista Carlo Pellegatti."
     },
     {
         id: 4,
