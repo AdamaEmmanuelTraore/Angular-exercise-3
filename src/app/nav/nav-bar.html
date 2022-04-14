@@ -1,14 +1,14 @@
 <ul>
-    <li><a routerLinkActive="active" [routerLink]="'home'">Rosa</a></li>
-    <li><a [routerLink]="'home/crea'">Aggiungi calciatore</a></li>
+    <li><a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" [routerLink]="'home'">Rosa</a></li>
+    <li><a routerLinkActive="active" [routerLink]="'home/crea'">Aggiungi calciatore</a></li>
     <li class="dropdown">
-        <a class="dropbtn">Società</a>
+        <a routerLinkActive="active" class="dropbtn">Società</a>
         <div class="dropdown-content">
-            <a [routerLink]="'home/dirigenza'">Dirigenza</a>
-            <a>Staff</a>
-            <a>Trofei</a>
+            <a routerLinkActive="active" [routerLink]="'home/dirigenza'">Dirigenza</a>
+            <a routerLinkActive="active">Staff</a>
+            <a routerLinkActive="active">Trofei</a>
         </div>
     </li>
-    <li><a>Contact</a></li>
-    <li class="about"><a>About</a></li>
+    <li><a routerLinkActive="active">Contact</a></li>
+    <li class="about"><a routerLinkActive="active">About</a></li>
 </ul>
