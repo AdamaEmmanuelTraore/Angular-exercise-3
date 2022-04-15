@@ -6,10 +6,10 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
     <div class="pyrs">
         <div><img src="{{card.img}}" class="foto"></div>
         <div [ngSwitch]="card.ruolo">
-            <span *ngSwitchCase="'Portiere'"><h1>Portiere</h1><hr></span>
-            <span *ngSwitchCase="'Difensore'"><h1>Difensore</h1><hr></span>
-            <span *ngSwitchCase="'Centrocampista'"><h1>Centrocampista</h1><hr></span>
-            <span *ngSwitchCase="'Attaccante'"><h1>Attaccante</h1><hr></span>
+            <span *ngSwitchCase="'Portiere'"><h1 class="r">Portiere</h1><img src="{{card.logo}}" class="sd"><hr></span>
+            <span *ngSwitchCase="'Difensore'"><h1 class="r">Difensore</h1><img src="{{card.logo}}" class="sd"><hr></span>
+            <span *ngSwitchCase="'Centrocampista'"><h1 class="r">Centrocampista</h1><img src="{{card.logo}}" class="sd"><hr></span>
+            <span *ngSwitchCase="'Attaccante'"><h1 class="r">Attaccante</h1><img src="{{card.logo}}" class="sd"><hr></span>
         </div>
         <div>Numero di maglia: {{card.numero_maglia}}</div>
         <div>Nome: {{card.nome}}</div>

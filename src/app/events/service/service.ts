@@ -14,6 +14,10 @@ export class ServiceCard {
     getElement(id: number) {
         return PLAYERS.find(card => card.id === id)
     }
+    // SERVIZIO PER VISUALIZZARE UN SINGOLO CALCIATORE
+    getStaff() {
+        return STAFF
+    }
 }
 
 const PLAYERS = [
@@ -21,6 +25,7 @@ const PLAYERS = [
         id: 1,
         img: '/assets/images/mike.png',
         gif: 'assets/images/maignan-maignan-milan.gif',
+        logo: '/assets/images/milan.png',
         ruolo: 'Portiere',
         numero_maglia: 16,
         nome: 'Mike',
@@ -34,6 +39,7 @@ const PLAYERS = [
     {
         id: 2,
         img: '/assets/images/tata.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Portiere',
         numero_maglia: 1,
         nome: 'Ciprian',
@@ -48,6 +54,7 @@ const PLAYERS = [
         id: 3,
         img: '/assets/images/calabria.png',
         gif: 'assets/images/davide-calabria-calabria.gif',
+        logo: '/assets/images/milan.png',
         ruolo: 'Difensore',
         numero_maglia: 2,
         nome: 'Davive',
@@ -61,6 +68,7 @@ const PLAYERS = [
     {
         id: 4,
         img: '/assets/images/florenzi.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Difensore',
         numero_maglia: 25,
         nome: 'Alessandro',
@@ -73,6 +81,7 @@ const PLAYERS = [
     {
         id: 5,
         img: '/assets/images/kjaer.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Difensore',
         numero_maglia: 24,
         nome: 'Simon',
@@ -85,6 +94,7 @@ const PLAYERS = [
     {
         id: 6,
         img: '/assets/images/tomori.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Difensore',
         numero_maglia: 23,
         nome: 'Fikayo',
@@ -97,6 +107,7 @@ const PLAYERS = [
     {
         id: 7,
         img: '/assets/images/romagnoli.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Difensore',
         numero_maglia: 13,
         nome: 'Alessio',
@@ -109,6 +120,7 @@ const PLAYERS = [
     {
         id: 8,
         img: '/assets/images/gabbia.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Difensore',
         numero_maglia: 46,
         nome: 'Matteo',
@@ -121,6 +133,7 @@ const PLAYERS = [
     {
         id: 9,
         img: '/assets/images/theo.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Difensore',
         numero_maglia: 19,
         nome: 'Theo',
@@ -133,6 +146,7 @@ const PLAYERS = [
     {
         id: 10,
         img: '/assets/images/toure.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Difensore',
         numero_maglia: 5,
         nome: 'Ballo',
@@ -145,6 +159,7 @@ const PLAYERS = [
     {
         id: 11,
         img: '/assets/images/kalulu.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Difensore',
         numero_maglia: 20,
         nome: 'Pierre',
@@ -157,6 +172,7 @@ const PLAYERS = [
     {
         id: 12,
         img: '/assets/images/tonali.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Centrocampista',
         numero_maglia: 8,
         nome: 'Sandro',
@@ -169,6 +185,7 @@ const PLAYERS = [
     {
         id: 13,
         img: '/assets/images/isma.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Centrocampista',
         numero_maglia: 4,
         nome: 'Ismail',
@@ -181,6 +198,7 @@ const PLAYERS = [
     {
         id: 14,
         img: '/assets/images/baka.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Centrocampista',
         numero_maglia: 41,
         nome: 'Tiemoué',
@@ -193,6 +211,7 @@ const PLAYERS = [
     {
         id: 15,
         img: '/assets/images/diaz.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Centrocampista',
         numero_maglia: 10,
         nome: 'Brahim',
@@ -205,6 +224,7 @@ const PLAYERS = [
     {
         id: 16,
         img: '/assets/images/leao.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Attaccante',
         numero_maglia: 17,
         nome: 'Rafael',
@@ -217,6 +237,7 @@ const PLAYERS = [
     {
         id: 17,
         img: '/assets/images/rebic.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Attaccante',
         numero_maglia: 12,
         nome: 'Ante',
@@ -229,6 +250,7 @@ const PLAYERS = [
     {
         id: 18,
         img: '/assets/images/alexis.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Attaccante',
         numero_maglia: 56,
         nome: 'Alexis',
@@ -241,6 +263,7 @@ const PLAYERS = [
     {
         id: 19,
         img: '/assets/images/messias.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Attaccante',
         numero_maglia: 30,
         nome: 'Junior',
@@ -253,6 +276,7 @@ const PLAYERS = [
     {
         id: 20,
         img: '/assets/images/giroud.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Attaccante',
         numero_maglia: 9,
         nome: 'Olivier',
@@ -265,6 +289,7 @@ const PLAYERS = [
     {
         id: 21,
         img: '/assets/images/ibra.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Attaccante',
         numero_maglia: 11,
         nome: 'Zlatan',
@@ -277,6 +302,7 @@ const PLAYERS = [
     {
         id: 22,
         img: '/assets/images/lazetic.png',
+        logo: '/assets/images/milan.png',
         ruolo: 'Attaccante',
         numero_maglia: 22,
         nome: 'Marco',
@@ -290,28 +316,94 @@ const PLAYERS = [
 
 const DIRIGENZA = [
 {   id: 1,
+    img: '/assets/images/scaroni.png',
+    ruolo: 'PRESIDENTE',
+    nome: 'Paolo',
+    cognome: 'Scaroni',
+    eta: '75 anni',
+    nazionalita: 'Italia'},
+
+{   id: 2,
+    img: '/assets/images/baresi.png',
+    ruolo: 'VICEPRESIDENTE ONORARIO',
+    nome: 'Franco',
+    cognome: 'Baresi',
+    altezza: '1,76 m',
+    eta: '61 anni',
+    nazionalita: 'Italia'},
+
+{   id: 3,
+    img: '/assets/images/gazidis.png',
+    ruolo: 'AMMINISTRATORE DELEGATO',
+    nome: 'Ivan',
+    cognome: 'Gazidis',
+    eta: '57 anni',
+    nazionalita: 'Sud-Africa'},
+
+{   id: 4,
     img: '/assets/images/maldini.png',
-    ruolo: 'Dirigente sportivo',
+    ruolo: 'TECHNICAL AREA DIRECTOR',
     nome: 'Paolo',
     cognome: 'Maldini',
     altezza: '1,86 m',
     eta: '53 anni',
     nazionalita: 'Italia'},
 
-{   id: 2,
+{   id: 5,
     img: '/assets/images/massara.png',
-    ruolo: 'Dirigente sportivo',
+    ruolo: 'SPORT DIRECTOR',
     nome: 'Frederic',
     cognome: 'Massara',
     altezza: '1,78 m',
     eta: '53 anni',
     nazionalita: 'Italia'},
 
-{   id: 3,
-    img: '/assets/images/gazidis.png',
-    ruolo: 'CEO',
-    nome: 'Ivan',
-    cognome: 'Gazidis',
-    eta: '57 anni',
-    nazionalita: 'Sud-Africa'}
+{   id: 6,
+    img: '/assets/images/massaro.png',
+    ruolo: 'BRAND AMBASSADOR',
+    nome: 'Daniele',
+    cognome: 'Massaro',
+    altezza: '1,79 m',
+    eta: '60 anni',
+    nazionalita: 'Italia'},
+
 ]
+
+const STAFF = [
+    {   id: 1,
+        img: '/assets/images/pioli.png',
+        ruolo: 'ALLENATORE',
+        nome: 'Stefano',
+        cognome: 'Pioli',
+        eta: '56 anni',
+        altezza: '1,83 m',
+        nazionalita: 'Italia'},
+    
+    {   id: 2,
+        img: '/assets/images/murelli.png',
+        ruolo: 'VICE-ALLENATORE',
+        nome: 'Giacomo',
+        cognome: 'Murelli',
+        eta: '58 anni',
+        altezza: '1,75 m',
+        nazionalita: 'Italia'},
+    
+    {   id: 3,
+        img: '/assets/images/dida.png',
+        ruolo: 'PREPARATORE PORTIERI',
+        nome: 'Nelson',
+        cognome: 'Dida',
+        eta: '48 anni',
+        altezza: '1,96 m',
+        nazionalita: 'Brasile'},
+    
+    {   id: 4,
+        img: '/assets/images/bonera.png',
+        ruolo: 'ASSISTENTE TECNICO',
+        nome: 'Daniele',
+        cognome: 'Bonera',
+        eta: '40 anni',
+        altezza: '1,85 m',
+        nazionalita: 'Italia'},
+    
+    ]

@@ -5,8 +5,10 @@ import { CardDetailsComponent } from "./events/card-details/card-details.compone
 import { EventRouteActivator } from "./events/card-details/event-route-activator.service";
 import { DirectorsComponent } from "./events/directors/directors.component";
 import { ParentComponent } from "./events/parent.component";
+import { StaffComponent } from "./events/staff/staff.component";
 
 export const appRoute: Routes = [
+    {path: 'home/staff', component: StaffComponent},
     {path: 'home/dirigenza', component: DirectorsComponent},
     {path: 'home/crea', component: AddPlayerComponent},
     {path: 'home', component: ParentComponent},

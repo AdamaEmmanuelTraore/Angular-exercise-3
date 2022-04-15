@@ -1,0 +1,16 @@
+<div class="pyr">
+    <h1>Staff Tecnico</h1>
+    <hr>
+    <div  *ngFor="let staff of staff" class="pick">
+      <div class="pyrs">
+        <div><img src="{{staff?.img}}" class="foto"></div>
+        <div>Ruolo: {{staff?.ruolo}}</div>
+        <div>Nome: {{staff?.nome}}</div>
+        <div>Cognome: {{staff?.cognome}}</div>
+        <div>Età: {{staff?.eta}}</div>
+        <div>Altezza: {{staff?.altezza}}</div>
+        <div>Nazionalità: {{staff?.nazionalita}}</div>
+        <br>
+    </div>
+    </div>
+  </div>

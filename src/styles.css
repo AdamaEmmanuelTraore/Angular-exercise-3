@@ -90,3 +90,12 @@ ul {
   a.active{
     background-color: #111;
   }
+  .r{
+    text-align: center;
+  }
+  .sd{
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+  }

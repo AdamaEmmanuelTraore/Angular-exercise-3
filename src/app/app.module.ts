@@ -11,6 +11,7 @@ import { ChildComponent } from './events/child.component';
 import { DirectorsComponent } from './events/directors/directors.component';
 import { ParentComponent } from './events/parent.component';
 import { ServiceCard } from './events/service/service';
+import { StaffComponent } from './events/staff/staff.component';
 import { NavBar } from './nav/nav-bar';
 import { appRoute } from './routes';
 
@@ -23,7 +24,8 @@ import { appRoute } from './routes';
     CardDetailsComponent,
     AddPlayerComponent,
     DirectorsComponent,
-    Error404Component
+    Error404Component,
+    StaffComponent
   ],
   imports: [
     BrowserModule,

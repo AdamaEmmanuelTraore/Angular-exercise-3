@@ -3,19 +3,13 @@
   <hr>
   <div  *ngFor="let director of director" class="pick">
     <div class="pyrs">
-      <div><img src="{{director.img}}" class="foto"></div>
-      <div [ngSwitch]="director.ruolo">
-          <span *ngSwitchCase="'Portiere'"><h1>Portiere</h1><hr></span>
-          <span *ngSwitchCase="'Difensore'"><h1>Difensore</h1><hr></span>
-          <span *ngSwitchCase="'Centrocampista'"><h1>Centrocampista</h1><hr></span>
-          <span *ngSwitchCase="'Attaccante'"><h1>Attaccante</h1><hr></span>
-      </div>
-      <div>Ruolo: {{director.ruolo}}</div>
-      <div>Nome: {{director.nome}}</div>
-      <div>Cognome: {{director.cognome}}</div>
-      <div>Età: {{director.eta}}</div>
-      <div>Altezza: {{director.altezza}}</div>
-      <div>Nazionalità: {{director.nazionalita}}</div>
+      <div><img src="{{director?.img}}" class="foto"></div>
+      <div>Ruolo: {{director?.ruolo}}</div>
+      <div>Nome: {{director?.nome}}</div>
+      <div>Cognome: {{director?.cognome}}</div>
+      <div>Età: {{director?.eta}}</div>
+      <div>Altezza: {{director?.altezza}}</div>
+      <div>Nazionalità: {{director?.nazionalita}}</div>
       <br>
   </div>
   </div>
