@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 import { ServiceCard } from "../service/service";
 
 @Component({
@@ -8,10 +9,10 @@ import { ServiceCard } from "../service/service";
 
 export class DirectorsComponent {
     director: any = []
-    constructor(private service: ServiceCard) {
+    constructor(private route: ActivatedRoute) {
 
     }
     ngOnInit() {
-        this.director = this.service.getDirectors()
+        this.director = this.route.snapshot.data['directors']
     }
 }

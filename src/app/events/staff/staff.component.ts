@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 import { ServiceCard } from "../service/service";
 
 @Component({
@@ -8,11 +9,11 @@ import { ServiceCard } from "../service/service";
 
 export class StaffComponent {
     staff: any = []
-    constructor(private service: ServiceCard) {
+    constructor(private route: ActivatedRoute) {
 
     }
     ngOnInit() {
-        this.staff = this.service.getStaff()
+        this.staff = this.route.snapshot.data['staff']
     }
 
 }

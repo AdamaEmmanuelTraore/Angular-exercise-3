@@ -1,14 +1,19 @@
 import { Injectable } from "@angular/core";
+import { Subject } from "rxjs";
 
 @Injectable()
 export class ServiceCard {
     // SERVIZIO PER VISUALIZZARE TUTTI I GIOCATORI
     getService() {
-        return PLAYERS
+        let subject = new Subject()
+        setTimeout(() => {subject.next(PLAYERS); subject.complete();}, 1000)
+        return subject
     }
     // SERVIZIO PER VISUALIZZARE TUTTI I GIOCATORI
     getDirectors() {
-        return DIRIGENZA
+        let subject = new Subject()
+        setTimeout(()=> {subject.next(DIRIGENZA); subject.complete();}, 2000)
+        return subject
     }
     // SERVIZIO PER VISUALIZZARE UN SINGOLO CALCIATORE
     getElement(id: number) {
@@ -16,7 +21,9 @@ export class ServiceCard {
     }
     // SERVIZIO PER VISUALIZZARE UN SINGOLO CALCIATORE
     getStaff() {
-        return STAFF
+        let subject = new Subject()
+        setTimeout(()=> {subject.next(STAFF); subject.complete();}, 1000)
+        return subject
     }
 }
 
@@ -40,6 +47,7 @@ const PLAYERS = [
         id: 2,
         img: '/assets/images/tata.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/tatarusanu.gif',
         ruolo: 'Portiere',
         numero_maglia: 1,
         nome: 'Ciprian',
@@ -69,6 +77,7 @@ const PLAYERS = [
         id: 4,
         img: '/assets/images/florenzi.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/florenzi.gif',
         ruolo: 'Difensore',
         numero_maglia: 25,
         nome: 'Alessandro',
@@ -82,6 +91,7 @@ const PLAYERS = [
         id: 5,
         img: '/assets/images/kjaer.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/kjaer.gif',
         ruolo: 'Difensore',
         numero_maglia: 24,
         nome: 'Simon',
@@ -95,6 +105,7 @@ const PLAYERS = [
         id: 6,
         img: '/assets/images/tomori.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/tomori.gif',
         ruolo: 'Difensore',
         numero_maglia: 23,
         nome: 'Fikayo',
@@ -108,6 +119,7 @@ const PLAYERS = [
         id: 7,
         img: '/assets/images/romagnoli.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/romagnoli.gif',
         ruolo: 'Difensore',
         numero_maglia: 13,
         nome: 'Alessio',
@@ -121,6 +133,7 @@ const PLAYERS = [
         id: 8,
         img: '/assets/images/gabbia.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/gabbia.gif',
         ruolo: 'Difensore',
         numero_maglia: 46,
         nome: 'Matteo',
@@ -134,6 +147,7 @@ const PLAYERS = [
         id: 9,
         img: '/assets/images/theo.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/theo.gif',
         ruolo: 'Difensore',
         numero_maglia: 19,
         nome: 'Theo',
@@ -147,6 +161,7 @@ const PLAYERS = [
         id: 10,
         img: '/assets/images/toure.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/toure.gif',
         ruolo: 'Difensore',
         numero_maglia: 5,
         nome: 'Ballo',
@@ -160,6 +175,7 @@ const PLAYERS = [
         id: 11,
         img: '/assets/images/kalulu.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/kalulu.gif',
         ruolo: 'Difensore',
         numero_maglia: 20,
         nome: 'Pierre',
@@ -173,6 +189,7 @@ const PLAYERS = [
         id: 12,
         img: '/assets/images/tonali.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/tonali.gif',
         ruolo: 'Centrocampista',
         numero_maglia: 8,
         nome: 'Sandro',
@@ -186,6 +203,7 @@ const PLAYERS = [
         id: 13,
         img: '/assets/images/isma.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/isma.gif',
         ruolo: 'Centrocampista',
         numero_maglia: 4,
         nome: 'Ismail',
@@ -199,6 +217,7 @@ const PLAYERS = [
         id: 14,
         img: '/assets/images/baka.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/bakayoko.gif',
         ruolo: 'Centrocampista',
         numero_maglia: 41,
         nome: 'Tiemoué',
@@ -212,6 +231,7 @@ const PLAYERS = [
         id: 15,
         img: '/assets/images/diaz.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/diaz.gif',
         ruolo: 'Centrocampista',
         numero_maglia: 10,
         nome: 'Brahim',
@@ -225,6 +245,7 @@ const PLAYERS = [
         id: 16,
         img: '/assets/images/leao.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/leao.gif',
         ruolo: 'Attaccante',
         numero_maglia: 17,
         nome: 'Rafael',
@@ -238,6 +259,7 @@ const PLAYERS = [
         id: 17,
         img: '/assets/images/rebic.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/rebic.gif',
         ruolo: 'Attaccante',
         numero_maglia: 12,
         nome: 'Ante',
@@ -251,6 +273,7 @@ const PLAYERS = [
         id: 18,
         img: '/assets/images/alexis.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/alexis.gif',
         ruolo: 'Attaccante',
         numero_maglia: 56,
         nome: 'Alexis',
@@ -264,6 +287,7 @@ const PLAYERS = [
         id: 19,
         img: '/assets/images/messias.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/messias.gif',
         ruolo: 'Attaccante',
         numero_maglia: 30,
         nome: 'Junior',
@@ -277,6 +301,7 @@ const PLAYERS = [
         id: 20,
         img: '/assets/images/giroud.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/giroud.gif',
         ruolo: 'Attaccante',
         numero_maglia: 9,
         nome: 'Olivier',
@@ -290,6 +315,7 @@ const PLAYERS = [
         id: 21,
         img: '/assets/images/ibra.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/ibra.gif',
         ruolo: 'Attaccante',
         numero_maglia: 11,
         nome: 'Zlatan',
@@ -303,6 +329,7 @@ const PLAYERS = [
         id: 22,
         img: '/assets/images/lazetic.png',
         logo: '/assets/images/milan.png',
+        gif: 'assets/images/lazetic.gif',
         ruolo: 'Attaccante',
         numero_maglia: 22,
         nome: 'Marco',

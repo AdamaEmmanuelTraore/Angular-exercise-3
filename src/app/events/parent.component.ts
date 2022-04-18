@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 import { ServiceCard } from "./service/service";
 
 @Component ({
@@ -15,11 +16,11 @@ import { ServiceCard } from "./service/service";
 
 export class ParentComponent implements OnInit {
     player: any = []
-    constructor(private service: ServiceCard) {
+    constructor(private route: ActivatedRoute) {
 
     }
     ngOnInit() {
-        this.player = this.service.getService()
+        this.player = this.route.snapshot.data['player']
     }
     // questo mi serve per il collegamento @Output figlio/padre
     dati(x: any) {

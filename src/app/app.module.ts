@@ -9,11 +9,13 @@ import { CardDetailsComponent } from './events/card-details/card-details.compone
 import { EventRouteActivator } from './events/card-details/event-route-activator.service';
 import { ChildComponent } from './events/child.component';
 import { DirectorsComponent } from './events/directors/directors.component';
+import { PlayersListResolver } from './events/players-list-resolver.service';
 import { ParentComponent } from './events/parent.component';
 import { ServiceCard } from './events/service/service';
 import { StaffComponent } from './events/staff/staff.component';
 import { NavBar } from './nav/nav-bar';
 import { appRoute } from './routes';
+import { DirectorsListResolver } from './events/directors-list-resolve.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,14 @@ import { appRoute } from './routes';
     BrowserModule,
     RouterModule.forRoot(appRoute)
   ],
-  providers: [ServiceCard, EventRouteActivator],
+  providers: [
+    ServiceCard,
+    EventRouteActivator,
+    PlayersListResolver,
+    DirectorsListResolver,
+    StaffComponent
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
